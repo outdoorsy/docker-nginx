@@ -1,0 +1,7 @@
+# dockerignore - excludes files and directories from docker context.
+# https://docs.docker.com/engine/reference/builder/#dockerignore-file
+
+.*
+*.md
+*.yml
+Dockerfile

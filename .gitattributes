@@ -1,0 +1,27 @@
+# gitattributes - defining attributes per path.
+# http://git-scm.com/docs/gitattributes
+
+# Automatically normalize line endings for all text-based files
+# http://git-scm.com/docs/gitattributes#_end_of_line_conversion
+* text=auto
+
+# For the following file types, normalize line endings to LF on checkin and
+# prevent conversion to CRLF when they are checked out (this is required in
+# order to prevent newline related issues)
+.*         text eol=lf
+*.conf     text eol=lf
+*.md       text eol=lf
+*.yml      text eol=lf
+*.yaml     text eol=lf
+Dockerfile text eol=lf
+LICENSE    text eol=lf
+
+# Exclude folders from Github's language statistics
+# https://github.com/github/linguist#documentation
+docs/* linguist-documentation
+
+# Help GitHub's language statistics with detecting `*.conf` files as Nginx
+# configuration files.
+# https://github.com/github/linguist/blob/master/README.md
+
+*.conf linguist-language=Nginx
