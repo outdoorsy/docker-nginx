@@ -1,5 +1,8 @@
 # docker-nginx
 
+![docker build](https://img.shields.io/docker/automated/outdoorsy/nginx.svg)
+[![docker pulls](https://img.shields.io/docker/pulls/outdoorsy/nginx.svg)](https://hub.docker.com/r/outdoorsy/nginx)
+
 `FROM` the official [nginx](https://hub.docker.com/_/nginx) base image, merged
 with the years of iterative development and community knowledge sourced into the
 [h5bp/server-configs-nginx](https://github.com/h5bp/server-configs-nginx)
