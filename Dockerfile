@@ -1,6 +1,6 @@
 FROM nginx:alpine
 
-LABEL maintainer="Outdoorsy, Inc. <devs@outdoorsy.com>"
+LABEL maintainer="Outdoorsy, Inc. <admin@outdoorsy.com>"
 
 ENV PORT=80
 EXPOSE ${PORT}
